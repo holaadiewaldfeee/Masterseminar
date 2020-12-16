@@ -13,7 +13,7 @@
 .*.lb
 
 ##ignore folder
-TobiSeminar_Multiclass_Density_Maps.*
+TobiSeminar_Multiclass_Density_Maps/
 paper/
 *.zip
 
