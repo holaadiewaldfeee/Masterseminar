@@ -1,0 +1,56 @@
+\documentclass[conference]{IEEEtran}
+\IEEEoverridecommandlockouts
+
+\usepackage{cite}
+\usepackage{amsmath,amssymb,amsfonts}
+\usepackage{algorithmic}
+\usepackage{graphicx}
+\usepackage{textcomp}
+\usepackage{xcolor}
+\usepackage{tabularx}
+\def\BibTeX{{\rm B\kern-.05em{\sc i\kern-.025em b}\kern-.08em
+    T\kern-.1667em\lower.7ex\hbox{E}\kern-.125emX}}
+\begin{document}
+
+\title{Metrics About Fault-Proneness In Object-Oriented Systems}
+
+\author{\IEEEauthorblockN{Sabrina Böhm}
+\IEEEauthorblockA{\textit{Universität Ulm} \\
+Ulm, Germany \\
+sabrina.boehm@uni-ulm.de}}
+
+% Notizen:
+% - Vortrag auf deutsch ~20min
+% - 12 Seiten Inhalt ohne Refs
+% - zwischen 8 und 25 Refs 
+% 
+% TODO - im abstract teasern auf welche metriken man genau eingeht
+% TODO - mehr im Intro aus abstract wiederholen, mehr sagen warum Fehlerauswirkungen kritisch sind, Auswirkungen von fehlern wie im abstract tiefer
+% TODO - im Intro auch schon zitieren wenn man muss, study such as [1], wenn man genaue Studien anspricht
+% TODO - im Intro was mach ich jetzt genau im folgenden noch mehr sagen
+% TODO - Research objective ganz am Ende ins Intro verschieben
+% TODO - und research objective in research methodolgy wieder aufgreifen (wie hab ich die Metriken gefunden, wie bin ich vorgegangen um sie zu vergleichen)
+% TODO - argumentieren warum ich die 2 metriken rausgepickt hab
+
+\maketitle
+
+\begin{abstract}
+	Software quality is becoming increasingly important in modern times. Faulty or insufficient software can have severe consequences. For this reason, aspects such as qualitiy, security, reliability and maintainability must be considered at an early stage of the development process. Early detection of bugs or problems in the software prevents enormously high costs at the later times. In safety-critical areas, for example, the property of fault-proneness must be carefully considered. In order to include this aspect early in the development process, there are a number of metrics and methods that can estimate the fault prediction or reduce the fault-proneness of the software. By following certain rules and procedures, high costs and time can be saved for both developers and consumers.
+	The goal of this work is to illustrate some of the widely used methods and design metrics that consider fault-proneness in object-oriented systems.
+	
+\end{abstract}
+
+\input{sections/introduction}
+\input{sections/contentBackground}
+\input{sections/researchMethod}
+\input{sections/relatedWork}
+\input{sections/analysisResults}
+\input{sections/discussion}
+\input{sections/conclusion}
+
+%\input{sections/altes}
+
+\bibliographystyle{IEEEtran}
+\bibliography{masterseminar}
+
+\end{document}
