@@ -1,0 +1,54 @@
+{
+    "latex-workshop.latex.recipes": [
+        {
+            "name": "bibtex -> pdflatex*2",
+            "tools": [
+                "bibtex",
+                "pdflatex",
+                "pdflatex"
+            ]
+        },
+        {
+            "name": "bibtex*2",
+            "tools": [
+                "bibtex",
+                "bibtex"
+            ]
+        },
+        {
+            "name": "pdflatex*2",
+            "tools": [
+                "pdflatex",
+                "pdflatex"
+            ]
+        }
+    ],
+    "latex-workshop.latex.tools": [
+        {
+            "name": "pdflatex",
+            "command": "pdflatex.exe",
+            "args": [
+                "-interaction=nonstopmode",
+                "-file-line-error",
+                "-synctex=1",
+                "template.tex"
+            ]
+        },
+        {
+            "name": "bibtex",
+            "command": "bibtex.exe",
+            "args": [
+                "-terse",
+                "template"
+            ]
+        }
+    ],
+    "spellright.language": [
+        "en"
+    ],
+    "spellright.documentTypes": [
+        "markdown",
+        "latex",
+        "plaintext"
+    ],
+}

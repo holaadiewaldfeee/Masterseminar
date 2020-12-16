@@ -1,0 +1,49 @@
+"description"?: <string>,
+"background"?: <Color>,
+"data": {
+    "url": <url> | "dataSpec": <DataSpec>
+},
+"smooth"?: {
+    "radius": <number>
+},
+"reencoding"?: {
+    "label"?: <LabelSpec>,
+    "color"?: <ColorSpec>,
+    "hatching"?: <HatchingSpec>
+},
+"rescale"?: {
+    "type": "linear"|"log"|"pow"|"sqrt"|"cbrt"|"equidepth",
+    "rebin"?: {
+        "type": "none"|"square"|"rect"|"topojson"|"voronoi",
+        "aggregation": "mean"|"max"|"sum"|"min"|"density",
+        "width"?: <number>,
+        "height"?: <number>,
+        "size"?: <number>,
+        "topojson"?: <TopoJSONSpec>,
+        "url"?: <string>,
+        "feature"?: <string>,
+        "points"?: <Point[]>,
+        "stroke"?: <Color>
+    },
+    "compose"?: {
+        "mix": "none"|"invmin"|"mean"|"max"| "blend"| "weavingrandom"|"weavingsquare"|"weavinghex"| "weavingtri"|"propline"|"hatching"|"separate"| "glyph"|"dotdensity"|"time",
+        "mixing"?: "additive"|"subtractive"|"multiplicative",
+        "size"?: <number>,
+        "widthprop"?: <string|number>,
+        "colprop"?:<boolean>,
+        "order"?: <number[]>,
+        "glyphSpec"?: <GlyphSpec>,
+        "interval"?: <number>
+    },
+    "levels"?: <number>
+},
+"contour"?: {
+    "stroke": <number>,
+    "lineWidth"?: <number>,
+    "values"?: <number[]>,
+    "blur"?: <number>
+},
+"legend"?: <LegendSpec>,
+"stroke"?: <StrokeSpec>,
+"axis"?: <AxisSpec>
+}
