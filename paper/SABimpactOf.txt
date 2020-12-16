@@ -1,0 +1,9 @@
+- Impact of Accounting
+- Alle vorhandenen Kohäsionsmetriken basieren direkt oder indirekt auf Beobachtungen der Attribute, auf die sich die Methoden beziehen, obwohl sie unterschiedliche Ansätze zur Messung der Kohäsion anwenden.
+- Zusammenfassend zeigen die empirischen Ergebnisse, über die in diesem Abschnitt berichtet wird, wie wichtig es ist, das Problem der Einbeziehung oder des Ausschlusses spezieller Methoden anzugehen, da diese Ergebnisse zeigen, dass ein hoher Prozentsatz der Klassen spezielle Methoden enthält. Darüber hinaus zeigen die Ergebnisse, dass die Einbeziehung spezieller Methoden in die Kohäsionsmessung die Kohäsionswerte für die meisten der betrachteten Metriken signifikant verändert, was die Verwendung der Kohäsionsmetriken in der Praxis beeinträchtigen könnte.
+
+
+-1) einschließen/ausschließen von bestimmten methoden, It empirically explores the importance of addressing the problem of including/excluding special methods and the impact of including/excluding
+special methods on the cohesion values that are obtained from using 20 different metrics on five open-source systems.
+2)untersucht es empirisch die Auswirkungen der Einbeziehung/des Ausschlusses spezieller Methoden aus Klassen von fünf Open-Source-Systemen auf Refactoring-Entscheidungen, die auf der Anwendung von 20 verschiedenen Kohäsionsmetriken basieren.
+3)wird empirisch untersucht, wie sich die Einbeziehung bzw. der Ausschluss spezieller Methoden aus Klassen von fünf Open-Source-Systemen auf die Fähigkeit von 20 verschiedenen Kohäsionsmetriken zur Erkennung fehlerhafter Klassen auswirkt.

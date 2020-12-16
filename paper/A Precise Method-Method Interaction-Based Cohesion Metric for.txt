@@ -1,0 +1,20 @@
+A Precise Method-Method Interaction-Based Cohesion Metric for
+Object-Oriented Classes 
+
+- Class cohesion refers to the relatedness of the class members, and it indicates
+one important aspect of the class design quality.
+-A meaningful class cohesion metric
+helps object-oriented software developers detect class design weaknesses and refactor
+classes accordingly. 
+-Most of these metrics are applicable based on low-level design information
+such as attribute references in methods. Some of these metrics capture class cohesion
+by counting the number of method pairs sharing common attributes.
+- A few metrics
+measure cohesion more precisely by considering the degree of interaction, through
+attribute references, between each pair of methods. 
+- This paper introduces a new cohesion metric (LSCC) that addresses a number of
+problems in existing cohesion metrics that account for interactions between methods,
+an important category of cohesion metrics (MMI) to support refactoring. It is defined
+to be used during the Low-Level Design (LLD) phase of object-oriented software, and
+is based on measuring the degree of method pair interactions caused by the sharing of
+attributes in a class

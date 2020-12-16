@@ -1,0 +1,5 @@
+Comparing fault-proneness estimation models
+#
+- fault-proneness estimation could play a key role in quality control of software products. much effort has been spent in defining metrics and identifying models for system assessment.
+-Using this metrics to assess which parts of the system are more fault-proneness is of primary importance.
+- 

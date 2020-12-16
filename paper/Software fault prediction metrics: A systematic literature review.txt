@@ -1,0 +1,8 @@
+Software fault prediction metrics: A systematic literature review
+
+- Object-oriented and process metrics have been reported
+to be more successful in finding faults compared to traditional size and complexity metrics.
+-Conclusion: More studies should be performed on large industrial software systems to find metrics more
+relevant for the  industry and to answer the question as to which metrics should be used in a given
+context.
+-
