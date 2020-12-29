@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.4.23)  28 DEC 2020 17:00
+This is pdfTeX, Version 3.14159265-2.6-1.40.18 (TeX Live 2017/Debian) (preloaded format=pdflatex 2019.4.23)  29 DEC 2020 13:40
 entering extended mode
  \write18 enabled.
  %&-line parsing enabled.
@@ -447,86 +447,88 @@ Missing character: There is no ¶ in font ptmr7t!
 Missing character: There is no Ã in font ptmri7t!
 Missing character: There is no ¤ in font ptmri7t!
 
-(./sections/introduction.tex) (./sections/contentBackground.tex [1{/var/lib/tex
-mf/fonts/map/pdftex/updmap/pdftex.map}
+(./sections/introduction.tex) (./sections/contentBackground.tex
+<pictures/oodesign.png, id=1, 997.7275pt x 531.9875pt>
+File: pictures/oodesign.png Graphic file (type png)
+<use pictures/oodesign.png>
+Package pdftex.def Info: pictures/oodesign.png  used on input line 11.
+(pdftex.def)             Requested size: 258.0pt x 137.55856pt.
+ [1{/var/lib/texmf/fonts/map/pdftex/updmap/pdftex.map}
 
 
-]
-LaTeX Font Info:    Try loading font information for U+msa on input line 16.
+]) (./sections/researchMethod.tex
+Underfull \vbox (badness 10000) has occurred while \output is active []
+
+)
+(./sections/relatedWork.tex
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no ¤ in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no ¼ in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no ¼ in font ptmr7t!
+Missing character: There is no Ã in font ptmr7t!
+Missing character: There is no ¤ in font ptmr7t!
+LaTeX Font Info:    Try loading font information for U+msa on input line 17.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsa.fd
 File: umsa.fd 2013/01/14 v3.01 AMS symbols A
 )
-LaTeX Font Info:    Try loading font information for U+msb on input line 16.
+LaTeX Font Info:    Try loading font information for U+msb on input line 17.
 
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 ))
-(./sections/researchMethod.tex) (./sections/relatedWork.tex
-Missing character: There is no Ã in font ptmr7t!
-Missing character: There is no ¤ in font ptmr7t!
-Missing character: There is no Ã in font ptmr7t!
-Missing character: There is no ¼ in font ptmr7t!
-Missing character: There is no Ã in font ptmr7t!
-Missing character: There is no ¼ in font ptmr7t!
-Missing character: There is no Ã in font ptmr7t!
-Missing character: There is no ¤ in font ptmr7t!
-)
 (./sections/analysisResults.tex
-Underfull \hbox (badness 10000) in alignment at lines 27--27
+Underfull \hbox (badness 10000) in alignment at lines 29--29
 [][][] 
  []
 
 
-Underfull \hbox (badness 1377) in paragraph at lines 31--31
+Underfull \hbox (badness 1377) in paragraph at lines 33--33
  \OT1/ptm/m/it/10 A. A Pre-cise Method-Method Interaction-Based Co-he-sion
  []
 
 
-Underfull \hbox (badness 1648) in paragraph at lines 33--34
+Underfull \hbox (badness 1648) in paragraph at lines 35--36
 []\OT1/ptm/m/n/10 - ex-plain as an ex-am-ple the Pre-cise Method-Method
  []
 
 
-Underfull \hbox (badness 7963) in paragraph at lines 33--34
+Underfull \hbox (badness 7963) in paragraph at lines 35--36
 \OT1/ptm/m/n/10 Interaction-Based Co-he-sion Met-ric for Object-Oriented
  []
 
-<pictures/am.png, id=10, 639.38875pt x 441.65pt>
+[2 <./pictures/oodesign.png>]
+<pictures/am.png, id=17, 639.38875pt x 441.65pt>
 File: pictures/am.png Graphic file (type png)
 <use pictures/am.png>
-Package pdftex.def Info: pictures/am.png  used on input line 45.
+Package pdftex.def Info: pictures/am.png  used on input line 47.
 (pdftex.def)             Requested size: 103.19843pt x 71.27869pt.
-<pictures/am2.png, id=12, 1421.31pt x 913.4125pt>
+<pictures/am2.png, id=18, 1421.31pt x 913.4125pt>
 File: pictures/am2.png Graphic file (type png)
 <use pictures/am2.png>
-Package pdftex.def Info: pictures/am2.png  used on input line 51.
+Package pdftex.def Info: pictures/am2.png  used on input line 53.
 (pdftex.def)             Requested size: 206.39685pt x 132.62958pt.
-<pictures/circle.png, id=13, 679.53876pt x 404.51125pt>
+<pictures/circle.png, id=19, 679.53876pt x 404.51125pt>
 File: pictures/circle.png Graphic file (type png)
 <use pictures/circle.png>
-Package pdftex.def Info: pictures/circle.png  used on input line 57.
+Package pdftex.def Info: pictures/circle.png  used on input line 59.
 (pdftex.def)             Requested size: 258.0pt x 153.58008pt.
-[2 <./pictures/am.png> <./pictures/am2.png>]
 <pictures/bn1.png, id=20, 737.75626pt x 581.17125pt>
 File: pictures/bn1.png Graphic file (type png)
 <use pictures/bn1.png>
-Package pdftex.def Info: pictures/bn1.png  used on input line 88.
+Package pdftex.def Info: pictures/bn1.png  used on input line 90.
 (pdftex.def)             Requested size: 103.19843pt x 81.29247pt.
-<pictures/bn2.png, id=21, 1046.91125pt x 783.92876pt>
+ [3 <./pictures/am.png> <./pictures/am2.png> <./pictures/circle.png> <./picture
+s/bn1.png>]
+<pictures/bn2.png, id=34, 1046.91125pt x 783.92876pt>
 File: pictures/bn2.png Graphic file (type png)
 <use pictures/bn2.png>
-Package pdftex.def Info: pictures/bn2.png  used on input line 108.
+Package pdftex.def Info: pictures/bn2.png  used on input line 110.
 (pdftex.def)             Requested size: 206.39685pt x 154.54611pt.
-) (./sections/discussion.tex
-[3 <./pictures/circle.png> <./pictures/bn1.png> <./pictures/bn2.png>])
-(./sections/conclusion.tex) (./masterseminar.bbl
-Underfull \hbox (badness 1960) in paragraph at lines 61--65
-[]\OT1/ptm/m/n/8 J. Al Dal-lal, ``Fault pre-dic-tion and the dis-crim-i-na-tive
- pow-ers of
- []
-
-)
+) (./sections/discussion.tex)
+(./sections/conclusion.tex) (./masterseminar.bbl [4 <./pictures/bn2.png>])
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -538,30 +540,32 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[4] (./masterseminar.aux) ) 
+[5
+
+] (./masterseminar.aux) ) 
 Here is how much of TeX's memory you used:
- 4502 strings out of 492982
- 65334 string characters out of 6134896
- 132705 words of memory out of 5000000
- 7969 multiletter control sequences out of 15000+600000
+ 4510 strings out of 492982
+ 65493 string characters out of 6134896
+ 132721 words of memory out of 5000000
+ 7976 multiletter control sequences out of 15000+600000
  40666 words of font info for 85 fonts, out of 8000000 for 9000
  1141 hyphenation exceptions out of 8191
- 41i,10n,35p,1030b,250s stack positions out of 5000i,500n,10000p,200000b,80000s
-{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/
-8r.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb
-></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/
-texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive
-/texmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-
-dist/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fon
-ts/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/typ
-e1/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/ut
-mbi8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr
-/share/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
-Output written on masterseminar.pdf (4 pages, 900097 bytes).
+ 41i,10n,35p,1177b,250s stack positions out of 5000i,500n,10000p,200000b,80000s
+{/usr/share/texlive/texmf-dist/fonts/enc/dvips/base/8r
+.enc}</usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmex10.pfb><
+/usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi10.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi5.pfb></usr/share/te
+xlive/texmf-dist/fonts/type1/public/amsfonts/cm/cmmi7.pfb></usr/share/texlive/t
+exmf-dist/fonts/type1/public/amsfonts/cm/cmr10.pfb></usr/share/texlive/texmf-di
+st/fonts/type1/public/amsfonts/cm/cmr7.pfb></usr/share/texlive/texmf-dist/fonts
+/type1/public/amsfonts/cm/cmsy10.pfb></usr/share/texlive/texmf-dist/fonts/type1
+/urw/times/utmb8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmb
+i8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/s
+hare/texlive/texmf-dist/fonts/type1/urw/times/utmri8a.pfb>
+Output written on masterseminar.pdf (5 pages, 941557 bytes).
 PDF statistics:
- 73 PDF objects out of 1000 (max. 8388607)
- 45 compressed objects within 1 object stream
+ 78 PDF objects out of 1000 (max. 8388607)
+ 47 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 26 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 31 words of extra memory for PDF output out of 10000 (max. 10000000)
 
