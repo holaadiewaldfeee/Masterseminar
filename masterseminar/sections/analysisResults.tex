@@ -68,29 +68,54 @@ Both CC and SCOM neither consider transitive MMI nor account for inheritance or 
 The results suggest that class quality, as measured in terms of fault occurrences, can be more accurately explained by cohesion metrics that account for the degree of interaction between each pair of methods. The fault prediction of interconnection-based object-oriented class cohesion metrics should help the developer to support refactoring during the LLD phase \cite{b8al2012precise}.
 
 
-\subsection{A Bayesian network}
+\subsection{A Bayesian Network}
 
-- is a concise representation of a joint probability distribution on a set of statistical variables
+The next method to take a closer look at the fault-proneness is a concise representation of a joint probability distribution on a set of statistical variables. Bayesian methods can be used for assessing software fault content and fault proneness. A bayesian network (BN) is encoded as an acyclic graph of nodes and directed edges \cite{b9pai2007empirical}. Assuming that the relationship can be modeled with a general linear model, the structural and numerical specification for the BN is derived. The model can be thought of as a generalization of existing techniques for assessing software quality. The model consists roughly of two parts, first the method produces a probability distribution of the estimated fault content per class in the system and second the conditional probability that a class contains a fault. 
+The structure of the model is a BN model whose underlying representation is the generalized linear model. The definition probabilistic network (acyclic graph $G=(V,E)$; A set $S$, of (prior) conditional probability distributions).
+Consider a finite set of random variables $X=\{X_1,X_2,....,X_n\}$. It can be defined that a probabilistic network $N=(G,X) over X$ consists of
+ \begin{enumerate}
+ 	\item[-] a directed acyclic graph $G=(V,E)$, $V$ is the set of nodes in the graph and there is a one-one correspondence between $V$ and $X$. $E \subseteq V \times V$ the set of directed edges, representing conditional independence assumptions, i.e., for each $X_i \in X$, $i(X_i,N D_{x_i}| Pa_{x_i})$ and $N D_{x_i} = X \backslash ({X_i} \cup Des_{x_i})$ 
+ 	\item[-] a set of (prior) conditional probability distributions, that specifies $p(X_i)| p(Pa_{x_i})$ for each $X_i \in X$, where $Pa_{x_i}$ represents the set of immediate parents of $X$.
+ \end{enumerate} 
 
-- encoded as an acyclic graph of nodes and directed edges \cite{b9pai2007empirical}. 
+Once a network is specified over a set of random variables, their marginal and joint probabilities can be computed.
+Given a BN structure, the joint probability distribution over $X$ is encoded as
 
-- how Bayesian methods can be used for assessing software fault content and fault proneness
-
-- dependent variables, which serve as surrogate metrics of software quality: fault content and fault proneness.
-
-- a BN model whose underlying representation is the generalized linear model (infos to the model)
-
-- (maybe) definition probabilistic network (acyclic graph $G=(V,E)$; A set $S$, of (prior) conditional probability distributions)
-
-- (maybe) given a BN structure, the joint probability distribution over $X$ is encoded as
-
-\begin{math}
+\begin{displaymath}
 	p(X)= \prod_{i=1}^{n}p(X_i|P_{ax_i})
-\end{math}
+\end{displaymath}
 
-- some maths: short summary of the mathematical aspects!?
+And given this joint probability, the marginal probability of a random variable $X_i$ is computed as 
 
-- explain the variables and the fault-pron context
+\begin{displaymath}
+	p(X_i)= \sum_{X_i,j\neq i}^{n}p(X)
+\end{displaymath}
+
+The model parameters that are used are listed in the following \cite{b9pai2007empirical}: 
+
+\begin{itemize}
+	\item[1.] Weighted methods per class (\textbf{WMC}): The number of methods implemented in a given class.
+	\item[2.] Depth of inheritance tree (\textbf{DOI})
+	\item[3.] Response for class (\textbf{RFC}): Number of methods implemented within a class plus the number of methods accessible to an object class due to inheritance. (Traditionally, it represents the number of methods that an object of a given class can execute in response to a received message \cite{b9pai2007empirical}.)
+	\item[4.] Number of children (\textbf{NOC}): The number of classes that directly inherit from a given class.
+	\item[5.] Coupling between object classes (\textbf{CBO}): The number of distinct non-inheritance related classes to which a given class is coupled. (i.e., when a given class uses the methods or attributes of the coupled class \cite{b9pai2007empirical}.)
+	\item[6.] Lack of cohesion in methods (\textbf{LCOM}): A measure of the degree to which a class represents single or multiple abstractions. There are varying definitions for LCOM. (i.e., by computing the average percentage of methods in a given class using each attribute of that class, and then subtracting that percentage from 100 percent \cite{b9pai2007empirical}.)
+	\item[7.] Source lines of code (\textbf{SLOC}): This is measured as the total lines of source code in the class and serves as a measure of class size.
+\end{itemize}
+
+The dependent variables, which serve as surrogate metrics of software quality, are
+\begin{itemize}
+	\item Fault Content (FC): We define fault content as the number of faults per class. The estimation of ourmodel is a (marginal) conditional probability ofobserving a certain number of faults per class, giventhe metrics for that class.
+	\item Fault proneness (FP): The conditional probability thata class contains a fault, given the metrics for that class.
+\end{itemize}
+
+\begin{figure}[htbp]
+	\centerline{\includegraphics[width=0.4\textwidth]{pictures/bn2.png}}
+	\caption{BN model for fault content and fault-proneness analysis.}
+	\label{fig2bn}
+\end{figure}
+
+The model construction is as follows
 
 \begin{figure}[htbp]
 	\centerline{\includegraphics[width=0.2\textwidth]{pictures/bn1.png}}
@@ -98,25 +123,8 @@ The results suggest that class quality, as measured in terms of fault occurrence
 	\label{fig1bn}
 \end{figure}
 
-- model parameters from \cite{b9pai2007empirical}: (somehow merge with table!?; until now almost copied out from paper)
 
-\begin{itemize}
-	\item[1.] Weighted methods per class (WMC): The number of methods implemented in a given class.
-	\item[2.] Depth of inheritance tree (see table)
-	\item[3.] Response for class (RFC): Number of methods implemented within a class plus the number of methods accessible to an object class due to inheritance. (Traditionally, it represents the number of methods that an object of a given class can execute in response to a received message \cite{b9pai2007empirical}.)
-	\item[4.] Number of children (NOC): The number of classes that directly inherit from a given class.
-	\item[6.] Coupling between object classes (CBO): The number of distinct non-inheritance related classes to which a given class is coupled. (i.e., when a given class uses the methods or attributes of the coupled class \cite{b9pai2007empirical}.)
-	\item[7.] Lack of cohesion in methods (LCOM): A measure of the degree to which a class represents single or multiple abstractions. There are varying definitions for LCOM. (i.e., by computing the average percentage of methods in a given class using each attribute of that class, and then subtracting that percentage from 100 percent \cite{b9pai2007empirical}.)
-	\item[8.] Source lines of code (SLOC): This is measured as the total lines of source code in the class and serves as a measure of class size.
-\end{itemize}
-
-- dependencies between metrics and impact
-
-\begin{figure}[htbp]
-	\centerline{\includegraphics[width=0.4\textwidth]{pictures/bn2.png}}
-	\caption{BN model for defect content and defect proneness analysis.}
-	\label{fig2bn}
-\end{figure}
+The results also show that this model producesthese estimations at a statistically significant level.
 
 - RESULTS 
 
