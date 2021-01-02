@@ -1,35 +1,40 @@
-\section{Related Work}
+\section{Related Work}\label{related}
 
-To take a close look at fault-proneness in object oriented systems, basic oo knowledge is important, as explained in section \ref{content}. The paper "Beyond Language Independent Object-Oriented Metrics: Model Independent Metrics" deals not only with the concept of object orientation but also beyong languages \cite{lanza2002beyond}. The aspects of object orientation such as class, method and attribute can be found here as shown in the following tables, which are subdivided into individual metrics. The meta model from figure \ref{fig0} serves here as a template to understand the relationships between the individual metrics. In the following tables \ref{tab:classmetrics},\ref{tab:methodmetrics} and \ref{tab:attributesmetrics} an excerpt of the metrics is listed. The used meta model and the metrics of the tables allow a multiple extension into different research directions. Thus, they fit the principle of object orientation and serve as a basic template to get into the basic structure of metrics. The advantages of this approach are the increased flexibility, i.e.,
+To take a close look at fault-proneness in object oriented systems, basic oo knowledge is important, as explained in section \ref{content}. The paper "Beyond Language Independent Object-Oriented Metrics: Model Independent Metrics" deals not only with the concept of object orientation but also beyong languages \cite{lanza2002beyond}. The aspects of object orientation such as class, method and attribute can be found here as shown in the following tables, which are subdivided into individual metrics. The meta model from figure \ref{fig0} serves here as a template to understand the relationships between the individual metrics. In the following tables \ref{tab:classmetrics},\ref{tab:methodmetrics} and \ref{tab:attributesmetrics} the abbrevations and the associated metrics are listed. The used meta model and the metrics of the tables allow a multiple extension into different research directions. Thus, they fit the principle of object orientation and serve as a basic template to get into the basic structure of metrics. The advantages of this approach are the increased flexibility, i.e.,
 new metamodels can be introduced from any context (for example, the financial world or databases), which provides a standard metric without the need to implement new metrics every time a new context is introduced \cite{lanza2002beyond}. Now, if you look at this system completely from an object orientation perspective, you can see that the basic programming concepts are translated into metrics. Each new method or variable crates more space to generate faults. The complexity of a class is depends, i.e., on the number of methods (NOM) or the number of attributes (NOA), that can be calculated with $(NOA = NIV + NCV)$, as shown in table \ref{tab:classmetrics}. An important metric about the methods of a class is the number of input parameters (NOP) or the number of access on attributes (NMAA), as you can see in figure \ref{tab:methodmetrics}. For the attribute metrics, the number of direct hits is of great importance, as can be found in figure \ref{tab:attributesmetrics}. 
 
 \begin{table}
-	\caption{An excerpt of the class metrics from the meta model.}~\label{tab:classmetrics}
+	\caption{Class metrics from the meta model.}~\label{tab:classmetrics}
 	
 	\setlength\tabcolsep{3pt}
 	\renewcommand{\arraystretch}{1.4}% for the vertical padding
 	\begin{tabularx}{\columnwidth}{ | c | p{7cm} | }
 		\hline
 		Abbrevation & Description \\ \hline\hline
-		NHL & Number of classes in superclass chain of class \\ \hline
+		HNL & Number of classes in superclass chain of class \\ \hline
 		NAM & Number of abstract methods \\ \hline
 		NCV & Number of class variables \\ \hline
 		NIA & Number of inherited attributes \\ \hline
 		NIV & Number of instance variables \\ \hline
 		NME & Number of methods extended, i.e., redefined in subclass by invoking the same method on a superclass \\ \hline	
 		NMI & Number of methods inherited, i.e., defined in superclass and inherited unmodified by subclass\\ \hline
+		NMO & Number of methods overridden, i.e., redefined compared to superclass\\ \hline
 		NOA & Number of attributes $(NOA = NIV + NCV)$ \\ \hline
 		NOC & Number of immediate subclasses of a class \\ \hline
 		NOM & Number of methods\\ \hline
-		PriA & Number of private attributes \\ \hline
-		PriM & Number of private methods \\ \hline
+		PriA & Number of private attributes (equivalent for protected and public attributes)\\ \hline
+		PriM & Number of private methods (equivalent for protected and public attributes)\\ \hline
 		WLOC & Sum of all lines of codes over all methods \\ \hline
+		WMSG & Sum of message sends in a class\\ \hline
+		WNMAA & Number of all accesses on attributes\\ \hline
+		WNOC & Number of all descendant classes\\ \hline
+		WNOS & Sum of statements in all method bodies of class\\ \hline
 		WNI & Number of invocations of all methods \\ \hline
 	\end{tabularx}
 \end{table}
 
 \begin{table}
-	\caption{An excerpt of the method metrics from the meta model.}~\label{tab:methodmetrics}
+	\caption{Method metrics from the meta model.}~\label{tab:methodmetrics}
 	
 	\setlength\tabcolsep{3pt}
 	\renewcommand{\arraystretch}{1.4}% for the vertical padding
@@ -135,17 +140,6 @@ strongly associated with fault-proneness, and that good prediction accuracy and 
 accuracy can be attained. This conclusion is encouraging from a practical standpoint, and hence urges
 further studies to corroborate (or otherwise) our findings and conclusions.
 
-\begin{figure}[htbp]
-	\centerline{\includegraphics[width=0.5\textwidth]{pictures/faultyclasses1.png}}
-	\caption{Theoretical basis for the development of object oriented product metrics \cite{b7radjenovic2013software}.}
-	\label{fig3}
-\end{figure}
-
-\begin{figure}[htbp]
-	\centerline{\includegraphics[width=0.45\textwidth]{pictures/faultyclasses2.png}}
-	\caption{Path diagram illustrating the confounding effect of class size on the relationship between an object-oriented metric and fault-proneness \cite{b7radjenovic2013software}.}
-	\label{fig3}
-\end{figure}
 
 
 A Validation of Object-Oriented Design Metrics as Quality Indicators ::: his paper presents the results of a study in which we empirically investigated the suite of object-oriented design metrics introduced in. More specifically, our goal is to assess these metrics as predictors of fault-prone classes and, therefore, determine whether they can be used as early quality indicators. This study is complementary to the work described in [30] where the same suite of metrics had been used to assess frequencies of maintenance changes to classes \cite{b11basili1996validation}.
@@ -163,3 +157,5 @@ Assessing the Applicability of Fault-Proneness Models Across Object-Oriented Sof
 
 Many approaches try to support the software development process with their metrics. All of them work in their own way and in certain situations. 
 In order to provide guidance on how to proceed in the software process, some metrics will be explained.
+
+\cite{b7radjenovic2013software}. Context: Software metrics may be used in fault prediction models to improve software quality by predicing fault location. wo wie viele genutzt werden udn so

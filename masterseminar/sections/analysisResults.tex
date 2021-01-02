@@ -1,51 +1,46 @@
 \section{Summary of Metrics}\label{analysis}
 
-\cite{lanza2002beyond} zuerst gibts auch metriken die entweder class metirken oder methoden metirken oder attribute metriken sind. kann man so klassifzieren
+Some basic metrics are based simply on counting the number of interactions or the lines of code of a class. Next, we take a closer look at two studies on metrics on fault-proneness. Build on the basic metrics of the Chapter \ref{related}, divided in class metrics, method metrics and attribute metrics, more detailed aspects are now examined. This provides a summary of many similar metrics compared to related research. First, we look at a study that deals with class cohesion metrics.
 
-- wie grenze ich mich ab von denen von related work
+\begin{figure}[htbp]
+	\centerline{\includegraphics[width=0.5\textwidth]{pictures/faultyclasses1.png}}
+	\caption{Theoretical basis for the development of object oriented product metrics \cite{b7radjenovic2013software}.}
+	\label{figCoupling}
+\end{figure}
 
-- evaluation possibilities
+\begin{figure}[htbp]
+	\centerline{\includegraphics[width=0.45\textwidth]{pictures/faultyclasses2.png}}
+	\caption{Path diagram illustrating the confounding effect of class size on the relationship between an object-oriented metric and fault-proneness \cite{b7radjenovic2013software}.}
+	\label{figSize}
+\end{figure}
 
-- The chapter in which the metrics are enumerated in general and then (maybe) two are picked out and discussed in detail
-
-- introduction to some metrics, properties, studies that deal with fault-proneness and investigate the issue of FP
-
-- Some of these metrics are based simply on counting the number of interactions
-
-- add path connectivity class cohesion (PCCC) to table
-
-- metrics table:
 
 \begin{table}
-	\caption{Metrics.}~\label{tab:metrics}
+	\caption{Metrics about fault-proneness.}~\label{tab:metrics}
 	
 	\setlength\tabcolsep{3pt}
 	\renewcommand{\arraystretch}{1.4}% for the vertical padding
 	\begin{tabularx}{\columnwidth}{ | c | p{5.8cm} || c | }
 		\hline
 		Abbrevation & Definition & Sources \\ \hline\hline
-		CBO & Coupling between Objects for a class is .. Coupling between Objects for a class is ..Coupling between Objects for a class is ..Coupling between Objects for a class is ..Coupling between Objects for a class is ..& \cite{b14chidamber1994metrics} \\ \hline
+		LSCC & low-level design class cohesion metric & \cite{b3al2012fault} \\ \hline
 		LOC & Lack of Cohesion counts ..  & \cite{b15chidamber1991towards} \\ \hline
 		DOI & Depth of Inheritance .. & \cite{b15chidamber1991towards} \\ \hline
-		... & ... & ... \\ \hline
+		PCCC & path connectivity class cohesion & ... \\ \hline
 	\end{tabularx}
 \end{table}
 
 
-\subsection{A Precise Method-Method Interaction-Based Cohesion Metric for Object-Oriented Classes}
+\subsection{Method-Method Interaction-Based Cohesion Metrics for Object-Oriented Classes}
 
-\textbf{1st method} Fault Prediction and the Discriminative Powers of Connectivity-Based
-Object-Oriented Class Cohesion Metrics \cite{b8al2012precise} ::: 
-- explain as an example the Precise Method-Method Interaction-Based Cohesion Metric for Object-Oriented Classes from paper \cite{b8al2012precise}.
-
-- explain method: the proposed class cohesion metric is based on counting the number of possible paths in graph that represents the connectivity pattern of the class members
-
-- relevance of methods, attributes in classes and their connectivity, figure \ref{fig1}, figure \ref{fig2}, figure \ref{fig3}.
-
-- search for other graphical representation ($\rightarrow$ java code snippet)
-
-- benefits and limitations of the method (maybe to results?)
-
+Basic units of design in object-oriented programs are classes. Class cohesion refers to the relatedness of class members, i.e., their attributes and methods. Multiple metrics for class cohesion have been proposed in the literature. These object-oriented metrics are based on information available during the high-level or low-level design phases.
+In this paper, a formula that accurately measures the degree of interaction between each pair of methods is proposed and used as the basis for introducing a low-level design class cohesion (LSCC) metric \cite{b8al2012precise}. Low-level design (LLD) cohesion metrics use more finely resolved information than that used by High-level design (HLD) cohesion metrics. HLD cohesion metrics identify potential cohesion issues early in the HLD phase. 
+In figure \ref{fig1}, rectangles represent methods, circles indicate attributes, and links illustrate the use of attributes by methods of a class. Metrics based on counting the number of links, i.e., the use of attributes by a method, can indicate whether a class is strongly or weakly cohesive. This finely granulated
+information is important to help software developers refactoring their code and detecting which methods to possibly remove, i.e., the methods that exhibit even no
+links with other methods. When a method-method interaction (MMI) metric
+is applied to measure the cohesion for the class shown in figure \ref{fig1}, the
+connectivity between each pair of methods is calculated, and it is clearly seen that
+method $m_3$ is weakly interconnected to other methods in this class.
 
 \begin{figure}[htbp]
 	\centerline{\includegraphics[width=0.2\textwidth]{pictures/am.png}}
@@ -53,17 +48,24 @@ Object-Oriented Class Cohesion Metrics \cite{b8al2012precise} :::
 	\label{fig1}
 \end{figure}
 
+As shown in figure \ref{fig2}, there are four other classes with a different method-method interconnection. The class cohesion (CC) of Bonja and Kidanmariam is the ratio of the summation of the similarities between all pairs of methods to the total number of pairs of methods \cite{bonja2006metrics}. The similarity between methods $i$ and $j$ is defined as
+\begin{displaymath}
+	sim(i,j)=\frac{|I_i \cap I_j|}{|I_i \cup I_j|} ,  
+\end{displaymath}
+where $I_i$ and $I_j$ are the sets of attributes linked by methods $i$ and $j$, respectivly \cite{b3al2012fault}. In contrast with the class cohesion metric of Pena (SCOM), the calculation is defined as follows
+\begin{displaymath}
+	sim(i,j)=\frac{|I_i \cap I_j|}{min(|I_i|, |I_j|)} \cdot \frac{|I_i \cup I_j|}{n},  
+\end{displaymath}
+where $n$ is the number of attributes \cite{fernandez2006sensitive}.
+Both CC and SCOM neither consider transitive MMI nor account for inheritance or different method types, and they have not been empirically validated against external quality attributes such as fault occurrences. Of course, there are many other metrics of this kind but the results for the metrics that consider the degree of interaction between each pair of methods are very close to each other \cite{b8al2012precise}.
+
 \begin{figure}[htbp]
 	\centerline{\includegraphics[width=0.4\textwidth]{pictures/am2.png}}
 	\caption{Classes with different method-method connectivity patterns \cite{b3al2012fault}.}
 	\label{fig2}
 \end{figure}
 
-\begin{figure}[htbp]
-	\centerline{\includegraphics[width=0.5\textwidth]{pictures/circle.png}}
-	\caption{Sample representative graph for a hypothetical class \cite{b3al2012fault}.}
-	\label{fig3}
-\end{figure}
+The results suggest that class quality, as measured in terms of fault occurrences, can be more accurately explained by cohesion metrics that account for the degree of interaction between each pair of methods. The fault prediction of interconnection-based object-oriented class cohesion metrics should help the developer to support refactoring during the LLD phase \cite{b8al2012precise}.
 
 
 \subsection{A Bayesian network}
@@ -115,8 +117,6 @@ Object-Oriented Class Cohesion Metrics \cite{b8al2012precise} :::
 	\caption{BN model for defect content and defect proneness analysis.}
 	\label{fig2bn}
 \end{figure}
-
-- summary of study/paper; note important aspects
 
 - RESULTS 
 

@@ -8,49 +8,52 @@ Reallocated singl_function (elt_size=4) to 100 items from 50.
 Reallocated wiz_functions (elt_size=4) to 6000 items from 3000.
 Reallocated singl_function (elt_size=4) to 100 items from 50.
 Database file #1: masterseminar.bib
+Warning--I didn't find a database entry for "kozlov2013fault"
 -- IEEEtran.bst version 1.12 (2007/01/11) by Michael Shell.
 -- http://www.michaelshell.org/tex/ieeetran/bibtex/
 -- See the "IEEEtran_bst_HOWTO.pdf" manual for usage information.
+Warning--empty journal in fernandez2006sensitive
 
 Done.
-You've used 13 entries,
+You've used 14 entries,
             4024 wiz_defined-function locations,
-            890 strings with 9848 characters,
-and the built_in function-call counts, 10799 in all, are:
-= -- 930
-> -- 216
-< -- 115
-+ -- 123
-- -- 31
-* -- 538
-:= -- 1652
-add.period$ -- 27
-call.type$ -- 13
-change.case$ -- 13
-chr.to.int$ -- 249
-cite$ -- 13
-duplicate$ -- 759
-empty$ -- 793
-format.name$ -- 42
-if$ -- 2469
+            897 strings with 9992 characters,
+and the built_in function-call counts, 11427 in all, are:
+= -- 973
+> -- 228
+< -- 120
++ -- 129
+- -- 32
+* -- 562
+:= -- 1732
+add.period$ -- 29
+call.type$ -- 14
+change.case$ -- 14
+chr.to.int$ -- 267
+cite$ -- 15
+duplicate$ -- 803
+empty$ -- 859
+format.name$ -- 44
+if$ -- 2619
 int.to.chr$ -- 0
-int.to.str$ -- 13
-missing$ -- 119
-newline$ -- 62
-num.names$ -- 13
-pop$ -- 223
+int.to.str$ -- 14
+missing$ -- 125
+newline$ -- 65
+num.names$ -- 14
+pop$ -- 248
 preamble$ -- 1
 purify$ -- 0
 quote$ -- 2
-skip$ -- 844
+skip$ -- 895
 stack$ -- 0
-substring$ -- 593
-swap$ -- 666
-text.length$ -- 32
+substring$ -- 636
+swap$ -- 694
+text.length$ -- 31
 text.prefix$ -- 0
 top$ -- 5
-type$ -- 13
-warning$ -- 0
-while$ -- 57
-width$ -- 15
-write$ -- 158
+type$ -- 14
+warning$ -- 1
+while$ -- 62
+width$ -- 16
+write$ -- 164
+(There were 2 warnings)

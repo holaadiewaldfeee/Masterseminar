@@ -32,12 +32,6 @@ M.~Lanza, S.~Ducasse \emph{et~al.}, ``Beyond language independent
   6th International Workshop on Quantitative Approaches in Object-Oriented
   Software Engineering}.\hskip 1em plus 0.5em minus 0.4em\relax Citeseer, 2002.
 
-\bibitem{kozlov2013fault}
-D.~Kozlov, J.~Koskinen \emph{et~al.}, ``Fault-proneness of open source
-  software: Exploring its relations to internal software quality and
-  maintenance process,'' \emph{The Open Software Engineering Journal}, vol.~7,
-  no.~1, 2013.
-
 \bibitem{b4al2012impact}
 J.~Al~Dallal, ``The impact of accounting for special methods in the measurement
   of object-oriented class cohesion on refactoring and fault prediction
@@ -55,15 +49,15 @@ V.~R. Basili, L.~C. Briand, and W.~L. Melo, ``A validation of object-oriented
   design metrics as quality indicators,'' \emph{IEEE Transactions on software
   engineering}, vol.~22, no.~10, pp. 751--761, 1996.
 
-\bibitem{b12riand2002assessing}
-L.~C. Briand, W.~L. Melo, and J.~Wust, ``Assessing the applicability of
-  fault-proneness models across object-oriented software projects,'' \emph{IEEE
-  transactions on Software Engineering}, vol.~28, no.~7, pp. 706--720, 2002.
-
 \bibitem{b10el2001prediction}
 K.~El~Emam, W.~Melo, and J.~C. Machado, ``The prediction of faulty classes
   using object-oriented design metrics,'' \emph{Journal of systems and
   software}, vol.~56, no.~1, pp. 63--75, 2001.
+
+\bibitem{b12riand2002assessing}
+L.~C. Briand, W.~L. Melo, and J.~Wust, ``Assessing the applicability of
+  fault-proneness models across object-oriented software projects,'' \emph{IEEE
+  transactions on Software Engineering}, vol.~28, no.~7, pp. 706--720, 2002.
 
 \bibitem{b14chidamber1994metrics}
 S.~R. Chidamber and C.~F. Kemerer, ``A metrics suite for object oriented
@@ -86,6 +80,15 @@ J.~Al~Dallal, ``Fault prediction and the discriminative powers of
   connectivity-based object-oriented class cohesion metrics,''
   \emph{Information and Software Technology}, vol.~54, no.~4, pp. 396--416,
   2012.
+
+\bibitem{bonja2006metrics}
+C.~Bonja and E.~Kidanmariam, ``Metrics for class cohesion and similarity
+  between methods,'' in \emph{Proceedings of the 44th annual Southeast regional
+  conference}, 2006, pp. 91--95.
+
+\bibitem{fernandez2006sensitive}
+L.~Fern{\'a}ndez and R.~Pe{\~n}a, ``A sensitive metric of class cohesion,''
+  2006.
 
 \bibitem{b9pai2007empirical}
 G.~J. Pai and J.~B. Dugan, ``Empirical analysis of software fault content and

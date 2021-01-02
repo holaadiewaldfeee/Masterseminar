@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.11.25)  2 JAN 2021 14:24
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.11.25)  2 JAN 2021 18:22
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -271,14 +271,7 @@ File: l3backend-pdfmode.def 2020-02-03 L3 backend support: PDF mode
 \l__kernel_color_stack_int=\count199
 \l__pdf_internal_box=\box51
 )
-(./masterseminar.aux
-
-LaTeX Warning: Label `fig3' multiply defined.
-
-
-LaTeX Warning: Label `fig3' multiply defined.
-
-)
+(./masterseminar.aux)
 \openout1 = `masterseminar.aux'.
 
 LaTeX Font Info:    Checking defaults for OML/cmm/m/it on input line 13.
@@ -343,77 +336,65 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 4.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in alignment at lines 28--28
+Underfull \hbox (badness 10000) in alignment at lines 33--33
+[][] 
+ []
+
+[2 <./pictures/oodesign.png>]
+Underfull \hbox (badness 10000) in alignment at lines 51--51
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in alignment at lines 46--46
+Underfull \hbox (badness 10000) in alignment at lines 64--64
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in alignment at lines 59--59
-[][] 
- []
+LaTeX Warning: Citation `kozlov2013fault' on page 3 undefined on input line 70.
 
-[2 <./pictures/oodesign.png>] [3]
+
+[3]) (./sections/analysisResults.tex
 <pictures/faultyclasses1.png, id=23, 1334.9875pt x 174.6525pt>
 File: pictures/faultyclasses1.png Graphic file (type png)
 <use pictures/faultyclasses1.png>
-Package pdftex.def Info: pictures/faultyclasses1.png  used on input line 139.
+Package pdftex.def Info: pictures/faultyclasses1.png  used on input line 6.
 (pdftex.def)             Requested size: 258.0pt x 33.75195pt.
 <pictures/faultyclasses2.png, id=24, 1116.17pt x 464.73625pt>
 File: pictures/faultyclasses2.png Graphic file (type png)
 <use pictures/faultyclasses2.png>
-Package pdftex.def Info: pictures/faultyclasses2.png  used on input line 145.
+Package pdftex.def Info: pictures/faultyclasses2.png  used on input line 12.
 (pdftex.def)             Requested size: 232.19843pt x 96.67561pt.
-) (./sections/analysisResults.tex
-Underfull \hbox (badness 10000) in alignment at lines 31--31
+
+Underfull \hbox (badness 10000) in alignment at lines 30--30
 [][][] 
  []
 
-
-Underfull \hbox (badness 1377) in paragraph at lines 35--35
- \OT1/ptm/m/it/10 A. A Pre-cise Method-Method Interaction-Based Co-he-sion
- []
-
-
-Underfull \hbox (badness 3108) in paragraph at lines 37--40
-[]\OT1/ptm/b/n/10 1st method \OT1/ptm/m/n/10 Fault Pre-dic-tion and the Dis-cri
-m-i-na-tive
- []
-
-[4 <./pictures/faultyclasses1.png> <./pictures/faultyclasses2.png>]
-<pictures/am.png, id=30, 639.38875pt x 441.65pt>
+[4 <./pictures/faultyclasses1.png>]
+<pictures/am.png, id=29, 639.38875pt x 441.65pt>
 File: pictures/am.png Graphic file (type png)
 <use pictures/am.png>
-Package pdftex.def Info: pictures/am.png  used on input line 51.
+Package pdftex.def Info: pictures/am.png  used on input line 46.
 (pdftex.def)             Requested size: 103.19843pt x 71.27869pt.
-<pictures/am2.png, id=31, 1421.31pt x 913.4125pt>
+<pictures/am2.png, id=30, 1421.31pt x 913.4125pt>
 File: pictures/am2.png Graphic file (type png)
 <use pictures/am2.png>
-Package pdftex.def Info: pictures/am2.png  used on input line 57.
+Package pdftex.def Info: pictures/am2.png  used on input line 63.
 (pdftex.def)             Requested size: 206.39685pt x 132.62958pt.
-<pictures/circle.png, id=32, 679.53876pt x 404.51125pt>
-File: pictures/circle.png Graphic file (type png)
-<use pictures/circle.png>
-Package pdftex.def Info: pictures/circle.png  used on input line 63.
-(pdftex.def)             Requested size: 258.0pt x 153.58008pt.
-<pictures/bn1.png, id=33, 737.75626pt x 581.17125pt>
+ [5 <./pictures/faultyclasses2.png> <./pictures/am.png> <./pictures/am2.png>]
+<pictures/bn1.png, id=40, 737.75626pt x 581.17125pt>
 File: pictures/bn1.png Graphic file (type png)
 <use pictures/bn1.png>
-Package pdftex.def Info: pictures/bn1.png  used on input line 94.
+Package pdftex.def Info: pictures/bn1.png  used on input line 96.
 (pdftex.def)             Requested size: 103.19843pt x 81.29247pt.
- [5 <./pictures/am.png> <./pictures/am2.png> <./pictures/circle.png> <./picture
-s/bn1.png>]
-<pictures/bn2.png, id=46, 1046.91125pt x 783.92876pt>
+<pictures/bn2.png, id=41, 1046.91125pt x 783.92876pt>
 File: pictures/bn2.png Graphic file (type png)
 <use pictures/bn2.png>
-Package pdftex.def Info: pictures/bn2.png  used on input line 114.
+Package pdftex.def Info: pictures/bn2.png  used on input line 116.
 (pdftex.def)             Requested size: 206.39685pt x 154.54611pt.
-) (./sections/discussion.tex) (./sections/conclusion.tex) (./masterseminar.bbl
-[6 <./pictures/bn2.png>])
+) (./sections/discussion.tex)
+(./sections/conclusion.tex [6 <./pictures/bn1.png> <./pictures/bn2.png>])
+(./masterseminar.bbl)
 
 ** Conference Paper **
 Before submitting the final camera ready copy, remember to:
@@ -425,17 +406,15 @@ Before submitting the final camera ready copy, remember to:
  uses only Type 1 fonts and that every step in the generation
  process uses the appropriate paper size.
 
-[7
+[7] (./masterseminar.aux)
 
-] (./masterseminar.aux)
-
-LaTeX Warning: There were multiply-defined labels.
+LaTeX Warning: There were undefined references.
 
  ) 
 Here is how much of TeX's memory you used:
  4052 strings out of 483107
- 58168 string characters out of 5964629
- 306707 words of memory out of 5000000
+ 58125 string characters out of 5964629
+ 307689 words of memory out of 5000000
  19009 multiletter control sequences out of 15000+600000
  570471 words of font info for 96 fonts, out of 8000000 for 9000
  59 hyphenation exceptions out of 8191
@@ -453,10 +432,10 @@ msfonts/cm/cmr10.pfb></usr/share/texlive/texmf-dist/fonts/type1/public/amsfonts
 ive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/texmf-dist
 /fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/type1/ur
 w/times/utmri8a.pfb>
-Output written on masterseminar.pdf (7 pages, 1027170 bytes).
+Output written on masterseminar.pdf (7 pages, 981600 bytes).
 PDF statistics:
- 98 PDF objects out of 1000 (max. 8388607)
+ 96 PDF objects out of 1000 (max. 8388607)
  59 compressed objects within 1 object stream
  0 named destinations out of 1000 (max. 500000)
- 41 words of extra memory for PDF output out of 10000 (max. 10000000)
+ 36 words of extra memory for PDF output out of 10000 (max. 10000000)
 
