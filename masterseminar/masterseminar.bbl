@@ -32,15 +32,23 @@ M.~Lanza, S.~Ducasse \emph{et~al.}, ``Beyond language independent
   6th International Workshop on Quantitative Approaches in Object-Oriented
   Software Engineering}.\hskip 1em plus 0.5em minus 0.4em\relax Citeseer, 2002.
 
-\bibitem{b13singh2010empirical}
-Y.~Singh, A.~Kaur, and R.~Malhotra, ``Empirical validation of object-oriented
-  metrics for predicting fault proneness models,'' \emph{Software quality
-  journal}, vol.~18, no.~1, p.~3, 2010.
+\bibitem{kozlov2013fault}
+D.~Kozlov, J.~Koskinen \emph{et~al.}, ``Fault-proneness of open source
+  software: Exploring its relations to internal software quality and
+  maintenance process,'' \emph{The Open Software Engineering Journal}, vol.~7,
+  no.~1, 2013.
 
-\bibitem{b10el2001prediction}
-K.~El~Emam, W.~Melo, and J.~C. Machado, ``The prediction of faulty classes
-  using object-oriented design metrics,'' \emph{Journal of systems and
-  software}, vol.~56, no.~1, pp. 63--75, 2001.
+\bibitem{b4al2012impact}
+J.~Al~Dallal, ``The impact of accounting for special methods in the measurement
+  of object-oriented class cohesion on refactoring and fault prediction
+  activities,'' \emph{Journal of Systems and Software}, vol.~85, no.~5, pp.
+  1042--1057, 2012.
+
+\bibitem{b7radjenovic2013software}
+D.~Radjenovi{\'c}, M.~Heri{\v{c}}ko, R.~Torkar, and A.~{\v{Z}}ivkovi{\v{c}},
+  ``Software fault prediction metrics: A systematic literature review,''
+  \emph{Information and software technology}, vol.~55, no.~8, pp. 1397--1418,
+  2013.
 
 \bibitem{b11basili1996validation}
 V.~R. Basili, L.~C. Briand, and W.~L. Melo, ``A validation of object-oriented
@@ -51,6 +59,11 @@ V.~R. Basili, L.~C. Briand, and W.~L. Melo, ``A validation of object-oriented
 L.~C. Briand, W.~L. Melo, and J.~Wust, ``Assessing the applicability of
   fault-proneness models across object-oriented software projects,'' \emph{IEEE
   transactions on Software Engineering}, vol.~28, no.~7, pp. 706--720, 2002.
+
+\bibitem{b10el2001prediction}
+K.~El~Emam, W.~Melo, and J.~C. Machado, ``The prediction of faulty classes
+  using object-oriented design metrics,'' \emph{Journal of systems and
+  software}, vol.~56, no.~1, pp. 63--75, 2001.
 
 \bibitem{b14chidamber1994metrics}
 S.~R. Chidamber and C.~F. Kemerer, ``A metrics suite for object oriented
