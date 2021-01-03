@@ -49,6 +49,12 @@ T.~M. Khoshgoftaar and N.~Seliya, ``Fault prediction modeling for software
   quality estimation: Comparing commonly used techniques,'' \emph{Empirical
   Software Engineering}, vol.~8, no.~3, pp. 255--283, 2003.
 
+\bibitem{b7radjenovic2013software}
+D.~Radjenovi{\'c}, M.~Heri{\v{c}}ko, R.~Torkar, and A.~{\v{Z}}ivkovi{\v{c}},
+  ``Software fault prediction metrics: A systematic literature review,''
+  \emph{Information and software technology}, vol.~55, no.~8, pp. 1397--1418,
+  2013.
+
 \bibitem{b10el2001prediction}
 K.~El~Emam, W.~Melo, and J.~C. Machado, ``The prediction of faulty classes
   using object-oriented design metrics,'' \emph{Journal of systems and
@@ -66,27 +72,15 @@ J.~Al~Dallal, ``The impact of accounting for special methods in the measurement
   activities,'' \emph{Journal of Systems and Software}, vol.~85, no.~5, pp.
   1042--1057, 2012.
 
-\bibitem{b7radjenovic2013software}
-D.~Radjenovi{\'c}, M.~Heri{\v{c}}ko, R.~Torkar, and A.~{\v{Z}}ivkovi{\v{c}},
-  ``Software fault prediction metrics: A systematic literature review,''
-  \emph{Information and software technology}, vol.~55, no.~8, pp. 1397--1418,
-  2013.
-
-\bibitem{b11basili1996validation}
-V.~R. Basili, L.~C. Briand, and W.~L. Melo, ``A validation of object-oriented
-  design metrics as quality indicators,'' \emph{IEEE Transactions on software
-  engineering}, vol.~22, no.~10, pp. 751--761, 1996.
-
-\bibitem{b12riand2002assessing}
-L.~C. Briand, W.~L. Melo, and J.~Wust, ``Assessing the applicability of
-  fault-proneness models across object-oriented software projects,'' \emph{IEEE
-  transactions on Software Engineering}, vol.~28, no.~7, pp. 706--720, 2002.
-
 \bibitem{b3al2012fault}
-J.~Al~Dallal, ``Fault prediction and the discriminative powers of
-  connectivity-based object-oriented class cohesion metrics,''
-  \emph{Information and Software Technology}, vol.~54, no.~4, pp. 396--416,
-  2012.
+------, ``Fault prediction and the discriminative powers of connectivity-based
+  object-oriented class cohesion metrics,'' \emph{Information and Software
+  Technology}, vol.~54, no.~4, pp. 396--416, 2012.
+
+\bibitem{b1aggarwal2007investigating}
+K.~Aggarwal, Y.~Singh, A.~Kaur, and R.~Malhotra, ``Investigating effect of
+  design metrics on fault proneness in object-oriented systems.'' \emph{J.
+  Object Technol.}, vol.~6, no.~10, pp. 127--141, 2007.
 
 \bibitem{b15chidamber1991towards}
 S.~R. Chidamber and C.~F. Kemerer, ``Towards a metrics suite for object
