@@ -1,34 +1,33 @@
-\section{Discussion}
+\section{Discussion}\label{discussion}
 
-- discuss the metrics depending on the benefits/limitations and which metrics scored well in comparison (die genauer betrachteten oder alle)
+As Chapter \ref{analysis} makes clear, many models and methods are based on the fundamentally same metrics introduced at the beginning. It also became clear that it quickly becomes mathematical and complex when, for example, the BN is examined in more detail. Accordingly, finding fault-proneness classes is not an easy task and requires effort and time from the stakeholders and the developers.
+In comparison, the individual methods to predict faults have concluded depending on the use case.
 
-- discussion with the classification according to relevance in the development process and the relevance for stakeholder
+When a company or software developer decides to use metrics for their object oriented system to avoid errors, there are many starting points. Some metrics start with an accurate understanding of object orientation, which in itself takes care of fault-proneness. However, just because you think you've found the right metric doesn't mean you won't make any more failures. Another problem, as some papers also note, is that the studies have mostly tested their metrics on small projects and so the validity is not scalable to larger systems. Therefore some aspects such as the size of the software project plays a big role. Some metrics are only designed for smaller systems.
 
-- what you should always pay attention to, no matter how large the project is; what depends on the size of the project; other projectsprops ($\rightarrow$ limitations)
+What is certain is that incorporating metrics or certain programming rules is important and can easily be verified via simple metrics to not disregard fault-proneness.
 
 
 \subsection{Classification of relevance}
 
-- in which parts of the development is it important to pay attention to fault proneness
+There are metrics that can or should be used in an early development process and those that are used in later states. Both do not guarantee fault prediction, but it is important to pay attention to fault-proneness at all.
+The aspect of fault-proneness must also be considered during planning and developing to avoid highly costs.
 
-- the aspect of fault-proneness must be considered early on, during planning and development
-
-- in addition always pay attention to all aspects early to avoid costs etc.
-
-- who is most influenced, developers or customers
-
-- for the developer important how to build and construct his object-oriented classes, with a metric as orientation to avoid bugs eg
+The most influenced persons are the developers but also the customers.
+For the developer it is important how to build and construct his object-oriented classes, with a metric as orientation to avoid bugs. For the customers it is of utmost importance that the use of the system runs error free, so the relevance is high.
 
 \subsection{Limitations}
 
-- Refactoring classes requires not only accounting for cohesion, but also accounting for other quality attributes, such as coupling (ref. \cite{b8al2012precise})
+A further problem that has emerged is that many studies were initially only tested on small data sets. The results of the studies are therefore only transferable to this type of software and thus the significance is not automatically scalable to larger data sets. For example, when refactoring classes, not only cohesion must be considered, but also other quality attributes, such as coupling. So it's not enough to get into one specific metric, you should include all of them a bit. However, if you don't have a lot of money to spend, corporations don't want to put their money into research on perfect metrics. The research on fault-proneness metrics so far gives a lot of room to develop new methods and approaches.
 
-- all errors that are feasible can never be covered
- 
-- many studies have only been tested with small software projects and classes, which is not very meaningful over large ones
+Sometimes it can also happen that several classes are displayed as faulty and the cause can only be fixed in a completely different class. This class is thus not discoverable by the applied method and the fault must be searched for elsewhere.
+
+Furthermore all errors that are feasible can never be covered. It depends on the way of programming and the communication among the people working on it, i.e. human influences that no metric can cover. In every context, new situations arise and will continue to arise in the future that require new metrics. If project changes occur in any development process states, the fault prediction metrics may also need to be adjusted, which is not done in most developments.
 
 \subsection{Benefits}
 
-- advantages if fault-proneness is included in early software steps; pay attention to metrics
+The widespread assumption is wrong that it is enough to look at the fault context once. A person working on the system should always keep an eye on the metrics to be observed in case of changes in order to avoid a costly awakening later on.
+Even if you can't be 100\% hedged by metrics on fault-proneness, the ability to make fewer mistakes is a good option for many developers. If fault-proneness is included in early software development steps, a lot of money can be saved.
+Later changes to the software, for example, if the architecture has to be changed or the database has to be adapted, are enormously expensive and time-consuming.
 
-- note time and money
+It may also happen that by considering design metrics, more attention is paid to building the entire system more carefully and cleanly, which additionally improves maintenance and changeability, among other things.
