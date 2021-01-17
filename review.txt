@@ -1,0 +1,89 @@
+-- Maintainability -- 
+
+- Überschrift einheitlich Sprache
+- dept. name of organization ec raus
+- ich will kapitel für kapitel durchgehen für die übersicht
+- abstract : schlagwörter groß geschrieben einmal und danach nicht mehr
+- intro : satz beginnt mit and und satz ist madig und allgemein satzbau verwirrend für mich noob
+- intro : definition von maintainability gut mit referenzen#
+- intro : Motivation : That can then be sagt man nicht, eher that can be..
+- intro : Motivation : As well as during later software updates or software maintenance of the software system
+- Intro : Goal : zweiter satz wieder mit then..
+- Intro : Goal : letzter Satz fängt mit And an -> nicht sehr wissenschaftlich
+- Intro : Overview : overview of oder about?
+- Intro : Overview : this is then followed again
+- Intro : Overview : letzter Satz section an anfang oder kommas oder keine ahnung wie man das gut machen könnte
+- Metho : einmal create und einmal wirte this paper anfangssätze
+- Metho : Ich Perspektive schreiben nicht gut glaub ich
+- Metho : base set? fundamental oder sowas maybe ich raffs sonst nicht was das heißen soll
+- Metho : wieder then
+- Metho : erklärung von maintennance auf maintainability gut
+- Metho : Now with Satzanfänge nicht ganz wiswenschafltich geschrieben
+- Metho : zweiter satz oben rechts, nochmal measuren? eher sagen dass die metriks dafür oder so
+- Metho : this darin falsch?
+- Metho : zwei mal guarantee im satz
+- Metho : Überleitung warum man die metriken braucht gut
+- Metho : This resulted in the second group of papers i used gleicher satz immer.
+- Metho : wie wurden sie ausgefiltert? die paper
+- Metho : -And discussion an comparison ? And? 
+- Metho : evtl. etwas verwirrend geschrieben der part aber an sich inhaltich gut
+- Relat : -et al. Punkt fehlt
+- Relat : -index as...?
+- Relat : -they then create ohne s
+- Relat : -the following paper mentions also mit s 
+- Relat : -yongchang et al. Punkt
+- Relat : evtl nicht nur autoren nennen sondern name des paper soder sowas, und wenn benutzt dann uf jeden fall kurz sagen um was es da geht oder so
+- Relat : nicht so stark ingesamt und bringt wenig informationen, zu kurz evtl auch
+- Backg : -Mean Time groß geschrieben und wieder nicht? Großschreibungen an sich
+- Backg : -the main software dev etc auf einmal software groß geschrieben.
+- Backg : -should be known mit n
+- Backg : -of THE requirements phase und vorallem was meint man hier
+- Backg : -kein punkt sondern komme vor as well as
+- Backg : -a vor Part fehlt oder??
+- Backg : -aus konsistenz gründen auch natural language processing groß schreiben abfangsbuchstaben?`
+- MAMFM : -vir it is nece muss ein neuer Satz ein Punkt oder sowas
+- MAMFM : A : -ohne Doppelpunkt würd ich sagen
+- MAMFM : A : mathematisch gesehen sollte irgendwo noch C = c_1,...,c_n stehen oder sowas
+- MAMFM : A : dd nachschauen in paper un dzitieren hier alles?
+- MAMFM : A : the musa okum satzbau komisch
+- MAMFM : A : -reuse that das t fehlt  und the softwa re system glaub ich
+- MAMFM : A : was heißt hier bei reuse other systems? evrsteh ich inhaltlich nicht, andere klassen oder sowas?
+- MAMFM : A : ab reuse andere darstellung von doppelpunkt auf klammern gewechselt ist komisch
+- MAMFM : A : 5-point eigenwort oder sollte man hier 5 ausschreiben?
+- MAMFM : A : source code groß geschrieben?
+- MAMFM : A :  unter figure 1 steht figure 2 , das vielleciht wegmachen
+- MAMFM : A : system control struce ist kleingeschrieben und dann alle gr0ß danach irgendwie und in figure sind sdie auch großgeschrieben
+- MAMFM : A : v(g)?
+- MAMFM : A : -single-entry, single-exit structures schriebfehler
+- MAMFM : A : gros und kleinscgreibung hier ganz komisch im ganzen abschnitt
+- MAMFM : A : unter 1) und 2) abhscnitt zwei mal "the" hitnereinander
+- MAMFM : A : ewight einmal groß und einmal klein geschrieben rechts oben seite
+- MAMFM : A : -Punkt fehlt am Endes des Abschnitts
+- MAMFM : B : FOR this... klingt komisch
+- MAMFM : B : then wieder
+- MAMFM : B : halstead metrics und dann nochmal metric check ich  nicht
+- MAMFM : B : hier auf einmal vregangenheit also the model that was best blabla
+- MAMFM : B : was ist v(g)?
+- MAMFM : C : villeicht am anfang des kapitels sagen was hier so unterteilt wird in a b c und so
+- MAMFM : C : -[7] und [8] kommt dann doch in eine Klammer
+- MAMFM : C : k welker9 allein oder et al?
+- MAMFM : C : the uses?
+- MAMFM : C : was heißt es dass nur menschen die analyse machen kömnne, ist das gut oder schlecht?
+- MAMFM : C : before maintencne helpful hää `
+- MAMFM : C : unterer abschnitt komisch
+- MAMFM : C : zusammenfassung dass menschen immer gebraucht werden wegen subjektiv und so fin d9ich gut
+- MAMFM : C : -nach etc. fehlt noch ein Punkt
+- MAMFM : C : welches paper concludes was hier? und was folgt hier hä
+
+
+- Kapitelübersicht sehr gut
+
+
+
+- Fragen an mich --
+- nach At least, Additionoally, Komma?
+
+
+---- Notizen für mich fürs Seminar ---
+- error anf fault oder sowas noch erklären unterschied einleitung
+- Forschungstrends am Anfang aufgreifen und am Ende des Vortrags als roter Faden
