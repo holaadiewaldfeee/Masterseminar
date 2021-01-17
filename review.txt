@@ -74,9 +74,80 @@
 - MAMFM : C : zusammenfassung dass menschen immer gebraucht werden wegen subjektiv und so fin d9ich gut
 - MAMFM : C : -nach etc. fehlt noch ein Punkt
 - MAMFM : C : welches paper concludes was hier? und was folgt hier hä
+- MAMFM : D : großschreibung wieder
+- MAMFM : D : -Schreibfehler zwei mal LOC, zweiteres sollte LOM sein
+- MAMFM : D : Zeiten did use etc. alles sollte präsens
+- MAMFM : D : -software wieder groß geschrieben
+- MAMFM : D : komme im if satz fehlt
+- MAMFM : D : see [10] sollte mit Zitat funktionieren
+- MAMFM : E : how A different context oder how differnet contexts affects..
+- MAMFM : E : immernoch zeit vergangenheit
+- MAMFM : E : are from the levels
+- MAMFM : E : TABELLE nicht als Bild sondern Tabelle selbst machen
+- MAMFM : E : zu der tabelle etwas sagen und nicht nur als "Nchschlagwerk" angeben
+- MAMFM : E : _that can be used schreibfehler statt uses
+copnexxt table?
+- AFHMA : and satz am anfaagan wieder
+- AFHMA : gute erklärung was im folgenden kommt
+- AFHMA : A : required oder requirement analyse in der überschfrit
+- AFHMA : A : was sind other problems bei der software requirements eng?
+- AFHMA : A : they can start hä?
+- AFHMA : A : keyword sets that were generated before.
+- AFHMA : A : grey similiar und grey closed und matrix?
+- AFHMA : A : with the now
+- AFHMA : B : überschrift hä?
+- AFHMA : B : warum Code großgeschrieben
+- AFHMA : B : , and depends on?
+- AFHMA : B : -the mda processes are based on fugure 4
+- AFHMA : B : mda groß oder kein geschrieben
+- AFHMA : B : gut die vorteile davon erklärt
+- AFHMA : B : all of this results in more... hä
+- AFHMA : B : viel über fehler und sowas an sich geredet aber nciht direkt über die maintainability
+- AFHMA : B : ohne code zwei mal
+- AFHMA : B : which results als satzanfang komisch
+- AFHMA : C : -different processes
+- AFHMA : C : also im satz zwischendrin komisch
+- AFHMA : C : gut zusammengefasst, aber figure 5 nicht wirklich erklärt oder mindestens 1 satz dazu wäre gut
+- AFHMA : D : system requirements problems mit s oder nicht [17]
+- AFHMA : D : dealing with personal?
+- DISCU : as well as als start auch komisch hier
+- DISCU : in THE section bla and bla
+- DISCU : A : zeiten wieder
+- DISCU : A : wieder großschreibung random?
+- DISCU : A : gut die verbindung zwischen code und comments und fehleranfälligkeit darin
+- DISCU : A : faactors satz check ich nicht
+- DISCU : A : requirementS pahase oder ohne s?
+- DISCU : A : nochmal aufgreifen von faul proneness wieder in requirements phase ist gutgut
+- DISCU : A : they found out? that
+- DISCU : B : gut zusammgefasst
+- DISCU : B : they are all build on...
+- DISCU : B : -or experts
+- DISCU : B : bacuse satz passt nicht allein stehen
+- DISCU : B : dass code nur einmal verändert werden msus mit dem pattern ist gut
+- DISCU : C : -[16] 4?
+- DISCU : C : Meaning it can be used a lot of times? that means
+- DISCU : C : OR satz anfang nee
+- DISCU : C : leading to less ... satz steht so allein weider
+- DISCU : D : as well as steht wieeder allein ganz unen auf der seite
+- DISCU : D : -like operating systems
+- DISCU : D : -have to be changed , d vergessen
+- DISCU : D : -costs mit s letzter satz
+- DISCU : D : gute zusammenfassung wofür das alles gut ist, was wirklich wichtig ist
+- CONCL : wieder as well as am satzanfang
+- CONCL : wieder mit And beginnend
+- CONCL : nochmal sagen welche metrics und measrues jetzt gut sind vielleciht am ende zusammenfassend
+- CONCL : letzter satz keine ahnung... besseres ende wäre gut
 
 
-- Kapitelübersicht sehr gut
+mehr studien dazu oder so ansprechen und was ide gemacht haben
+
+
+
+
+- Kapitelübersicht sehr gut, auch die unterteilung zweischen den zwei gruppen von papern sozusagen VI und davor
+- Ingesamt manchmal zeiten geswitcht alles präesns eigentlich 
+- immer das then
+- komma setzung
 
 
 
@@ -85,5 +156,8 @@
 
 
 ---- Notizen für mich fürs Seminar ---
-- error anf fault oder sowas noch erklären unterschied einleitung
+- error anf fault oder sowas noch erklären unterschied einleitung auch als seite in präsi
 - Forschungstrends am Anfang aufgreifen und am Ende des Vortrags als roter Faden
+- ISO nachschauen
+- Class level method level and project level nachshcauen
+- Hu et al 14 nachschauen wegen requirements für faults
