@@ -1,6 +1,8 @@
 \section{Summary of Metrics}\label{analysis}
+%besser umbennen wenn mir was besseres einfällt
 
 Some fundamental metrics are based simply on counting the number of interactions or the lines of code of a class as shown in Section \ref{related}. Next, we take a closer look at the most famous object-oriented metrics, the "CK-metrics". It is a set of metrics proposed by Chidamber and Kemerer in 1991 specifically for object-oriented software \cite{b15chidamber1991towards}. Build on the basic metrics table of the Chapter \ref{related}, divided in class metrics, method metrics and attribute metrics, more detailed aspects are now examined. 
+% Dort wurden sie vorgestellt aber 1994 veröffentlichten sie eine verbesserte version. Du solltest hier beide Paper aufnehmen da oft auf das zweite Paper referenziert wird.
 
 Many metrics are based on comparable ideas and provide redundant information. By using a subset of metrics, prediction models can be built to identify the classes that are in fault. In the table \ref{tab:metrics}, on can see the CK-metrics summarized, which are named in many other papers too.
 
@@ -23,8 +25,13 @@ Many metrics are based on comparable ideas and provide redundant information. By
 
 Next, some of the CK metrics will be presented in more detail and with some examples.
 
-\subsubsection{\textbf{CBO}}: The coupling between objects for a class is a count of the number of non-inheritance related couples with other classes. Two things are coupled if and only at least one of them atcs upon the other. Any evidence of a method of one object using methods or instance variables of another object constitutes coupling. Given is an example for CBO: 
+%wenn ich die hier genauer erklär dann in tabelle nur ganz kurz, dass es nicht redundant ist 
+%also tabelle als grobe übersicht und dann hier genauer klärt
 
+\subsubsection{\textbf{CBO}}: The coupling between objects for a class is a count of the number of non-inheritance related couples with other classes. Two things are coupled if and only at least one of them atcs upon the other. Any evidence of a method of one object using methods or instance variables of another object constitutes coupling. Given is an example for CBO: 
+%BEISPIEL code in listing!
+%und diese Beispiele im text referenzieren und nicht im lesefluss drin lassen sondern nur wenn man will die dann anschauen
+%in listing 1 you can find an example for CBO und erklären blabla
 \begin{small}
 \begin{verbatim}
 import java.util.Calendar;
@@ -42,6 +49,9 @@ public class AdultIssuePolicy implements
 \end{small}
 
 Note, that coupling is not associative, i.e., if $A$ is coupled to $B$ and $B$ is coupled to $C$, this does not imply that $C$ is coupled to $A$.
+
+%gleichungen in math context und refernzieren und text dazu umformulieren
+%Gib den Gleichungen Nummern und referenzier im Text darauf. ... in equation (2) ist blab bla seen....	
 
 \subsubsection{\textbf{LCOM}}: The Lack of Cohesion in Methods counts number of null pairs of methods that do not have common attributes. Consider a Class $A$ with methods $m_1$, $m_2$,...$m_n$. Let $\{I_i\} =$ set of instance variables used by the method $m_i$. There are $n$ such sets $I_1$,...,$I_n$. The LCOM is therefore the number of disjoint sets formed by the intersections of the $n$ sets. Formally let´s say a Class $C$ with 
 \begin{itemize}
@@ -85,6 +95,8 @@ public class A {
 When looking at the $(m_i,m_j)$ pairs, the $I_i \cap I_j$ of $(method1,method2)$ is $_f2$, $(method1,method3)$ is $\emptyset$ and $(method2,method3)$ is $_f3$. Therefore LCOM is $1$.
 
 \subsubsection{\textbf{NOC}} The number of immediate subclasses subordinated to a class in the class hierarchy, which is pretty much self explanatory.
+%zu wenig hier, mehr schreiben
+%Etwas kurz. Was für Auswirkungen haben hohe oder niedrige NOC Werte und was kann man an den NOC werten erkennen? Vielleicht Vererbung kurz an einem Bild erläutern.
 
 \subsubsection{\textbf{DOI}} The Depth of inheritance of the class is the depth of inheritance tree metric for the class, it is the length of the longest path to the root. The deeper a class is in the hierarchy, the greater the number of methods it is likely to inherit, making it more
 complex, but it is useful to have a measure of how deep a particular class is in hierarchy so that the class can be designed with reuse of inherited methods.
@@ -115,14 +127,18 @@ It follows $RS = { methA1, methA2, methB1, methC1}$.
 These metrics are the fundamental rules, that developers follow. People who investigate new studies on metrics in objectorineted systems usually have these rules as a cornerstone.
 Some issues that comes with this metrics, are what happen with classes with no fields, static member or self calls. Not all questions, provide the metrics answer, they just provide a framework.
 
+%dieser step ist unnötig hier den übergang zu forcen mit dem nächsten satz
 Next step, is the look at a study that deals with class cohesion metrics. After that, a bayesian network is explained, which is a bit more difficult.
 
 
-\subsection{Method-Method Interaction-Based Cohesion Metrics for Object-Oriented Classes}\label{mmi}
+\subsection{Method to Method Interaction-Based Cohesion Metrics for Object-Oriented Classes}\label{mmi}
 
 Basic units of design in object-oriented programs are classes. Class cohesion refers to the relatedness of class members, i.e., their attributes and methods. Multiple metrics for class cohesion have been proposed in the literature. These object-oriented metrics are based on information available during the high-level or low-level design phases.
 A formula that accurately measures the degree of interaction between each pair of methods is proposed and used as the basis for introducing a low-level design class cohesion (LSCC) metric \cite{b8al2012precise}. Low-level design (LLD) cohesion metrics use more finely resolved information than that used by High-level design (HLD) cohesion metrics. HLD cohesion metrics identify potential cohesion issues early in the HLD phase. 
 In figure \ref{fig1}, rectangles represent methods, circles indicate attributes, and links illustrate the use of attributes by methods of a class. Metrics based on counting the number of links, i.e., the use of attributes by a method, can indicate whether a class is strongly or weakly cohesive. This finely granulated information is important to help software developers refactoring their code and detecting which methods to possibly remove, i.e., the methods that exhibit even no links with other methods. When a method-method interaction (MMI) metric is applied to measure the cohesion for the class shown in figure \ref{fig1}, the connectivity between each pair of methods is calculated, and it is clearly seen that method $m_3$ is weakly interconnected to other methods in this class.
+
+%LLD HLD erklären was das ist
+%SLOC nicht
 
 \begin{figure}[htbp]
 	\centerline{\includegraphics[width=0.2\textwidth]{pictures/am.png}}
@@ -155,8 +171,10 @@ The results suggest that class quality, as measured in terms of fault occurrence
 Some metrics are based on the concept of the possibility that the methods and attributes of a class of the code can be presented as a graph. Here the interaction can be graphically represented by an undirected edge that links a circular node (attribute) to a rectangular node (method).
 
 The next method to take a closer look at the fault-proneness is a concise representation of a joint probability distribution on a set of statistical variables. Bayesian methods can be used for assessing software fault content and fault proneness. A bayesian network (BN) is encoded as an acyclic graph of nodes and directed edges \cite{b9pai2007empirical}. Assuming that the relationship can be modeled with a general linear model, the structural and numerical specification for the BN is derived. The model can be thought of as a generalization of existing techniques for assessing software quality. The model consists roughly of two parts, first the method produces a probability distribution of the estimated fault content per class in the system and second the conditional probability that a class contains a fault. 
+%azyklischer graph könnte m,an ein bild reinmachen als erklärung aber muss nicht
 The structure of the model is a BN model whose underlying representation is the generalized linear model. The definition probabilistic network (acyclic graph $G=(V,E)$; A set $S$, of (prior) conditional probability distributions).
 Consider a finite set of random variables $X=\{X_1,X_2,....,X_n\}$. It can be defined that a probabilistic network $N=(G,X) over X$ consists of
+%diese hier im text lassen wenn man sie später nicht mehr benutzt, wenn man sie später noch mal zur erleutung braucht dann benummern und refernzieren
  \begin{enumerate}
  	\item[-] a directed acyclic graph $G=(V,E)$, $V$ is the set of nodes in the graph and there is a one-one correspondence between $V$ and $X$. $E \subseteq V \times V$ the set of directed edges, representing conditional independence assumptions, i.e., for each $X_i \in X$, $i(X_i,N D_{x_i}| Pa_{x_i})$ and $N D_{x_i} = X \backslash ({X_i} \cup Des_{x_i})$ 
  	\item[-] a set of (prior) conditional probability distributions, that specifies $p(X_i)| p(Pa_{x_i})$ for each $X_i \in X$, where $Pa_{x_i}$ represents the set of immediate parents of $X$.
@@ -164,7 +182,7 @@ Consider a finite set of random variables $X=\{X_1,X_2,....,X_n\}$. It can be de
 
 Once a network is specified over a set of random variables, their marginal and joint probabilities can be computed.
 Given a BN structure, the joint probability distribution over $X$ is encoded as
-
+%GLEICHUNGEN NUMMERN GEBEN WIEDER und im text refernezieren, wie code referenzieren
 \begin{displaymath}
 	p(X)= \prod_{i=1}^{n}p(X_i|P_{ax_i})
 \end{displaymath}
@@ -195,6 +213,7 @@ The dependent variables, which serve as surrogate metrics of software quality he
 \end{itemize}
 
 In this approach, it is assumed that a general linear model (GLM) relates the dependent and independent random variables and construct a BN structure that represents the GLM. This assumption is motivated by several factors: The GLM is versatile enough to represent existing linear relationships or, through transformations, a variety of nonlinear relationships. Linear models also provide a relatively simple and parameterized way to capture the dependencies between domain variables. 
+%GLN nochmal erklärung, wenn es ganz wichtig is zu wissen was das ist dann in background aber sonst reicht hier kurze erklärung
  
 Consider that a responsive variable $Y$ varies as some function of a set $X=\{X_1,X_",...,X_k\}$ of independent predictor variables. In the GLM, it follows 
 \begin{displaymath}
@@ -224,3 +243,5 @@ The results also show that this model produces these estimations at a statistica
 	\caption{Data Description.}
 	\label{fig3bn}
 \end{figure}
+
+%WICHTIG: sagen wieso genau die 2 metriken rausgesucht 

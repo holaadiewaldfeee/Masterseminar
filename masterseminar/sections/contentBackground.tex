@@ -1,9 +1,15 @@
 \section{Content Background}\label{content}
 
+%Um noch Inhalt zu gewinnen könntest du Object-Orientieted Programmierung erläutern und sagen zu was sie sich abgrenzt(Imperative Programmierung usw.)
+%== als eigene Sektion wennn ich noch Platz brauch -> SUBSECTION!
 In the following, we will consider fault-proneness as already mentioned, but from a restricted point of view, in an object-oriented context. Many software systems in use are based on object-oriented design. This means that data and program code are encapsulated in reusable objects. Everything is based on the communication of objects. For this purpose, classes, interfaces and methods, as well as attributes are declared and thus serve to represent states. This structure alone protects against fault-proneness, since the code is reusable and thus the programming effort is reduced \cite{fichman1993adoption}. Therefore, object orientation in itself offers advantages for maintainability and reusability \cite{lanza2002beyond}. Thus, fewer errors occur and the fault-proneness is reduced, too. 
 
 In the object oriented context there are a few constructs like class, coupling, cohesion, inheritance, information hiding and polymorphism, which also influence the fault-proneness. Examples of languages that program object-oriented are C\#, C++ or Java.
-One of the most common aspects incorporated into metrics is that of coupling, which refers to the degree of direct knowledge that one element has of another. For example subclass coupling describes the relationship between a child and its parent. The child is connected to its parent, but the parent is not connected to the child. The degree of interconnection of the whole system is a key element in software development, i.e., it is important how big the effect of changing one attribute of one class has on all others and especially how many.
+%Wenn du dich hier auf die CK metriken beziehst ist es nicht knowledge sondern influence. Siehe CBO definition von CK metriken(Chidamber und Kernerer)
+%zitate für metriken
+One of the most common aspects incorporated into metrics is that of coupling, which refers to the degree of direct knowledge that one element has of another. For example subclass coupling describes the relationship between a child and its parent. The child is connected to its parent, but the parent is not connected to the child. 
+%ich vermute mal du willst hier sagen das die parent class "einfluss" auf die Kinder hat und nicht anders herum. Schreib das er irgendwie so: .. therefore the parent class influences the inherited classes throguh the inherited methods .... -> umformulieren den satz
+The degree of interconnection of the whole system is a key element in software development, i.e., it is important how big the effect of changing one attribute of one class has on all others and especially how many.
 Therefore coupling plays a central role in the effects of software faults. It is defined as the degree of interdependence or the strength of relationship between software modules.
 To give a short introduction in object orientation and the relation between its properties, it is shown in figure \ref{fig0}, that the general aspects as class, method and attribute depend on each other. Invoking methods and accessing attributes is the basic principle of communication of object-oriented software systems, which means that faults can occur here depending on the frequency of use of the methods or attributes.
 
@@ -13,10 +19,13 @@ To give a short introduction in object orientation and the relation between its 
 	\label{fig0}
 \end{figure}
 
-In how far the interaction of the individual components are connected with the fault-proneness metrics, that is described in the summary of metrics Section \ref{analysis} more near.
+In how far the interaction of the individual components are connected with the fault-proneness metrics, this is described in the summary of metrics Section \ref{analysis} more near.%hier fehlt irgendwo ein wort
 
 But why should a programmer actually pay attention to fault-proneness at all? The accurate prediction of where bugs are more likely to occur in the code can help manage efforts in testing, reduce costs, and improve the quality of the software. For different programming paradigms and programming constructs different rules apply which must be considered in relation to fault-proneness.  The restriction on object orientation is to facilitate the understanding. In addition many principles are contained, which are taken up in other programming concepts again. Thus some conclusions which are drawn here are also differently realizable and applicable to other software concepts.
+%das ist motivation, hier nicht rein sondern nur fakten hier zur background work. Moti kommt in einleitung
 
-In terms of fault-proneness, other quality characteristics that must not be forgotten also play a role like reliability, correctness, completeness, maintainability, as some are dependent on each other in terms of time. For example, software may not be reliable or correct if faults occur frequently that cause the software to become unusable.
+In terms of fault-proneness, other quality characteristics that must not be forgotten also play a role like reliability, correctness, completeness, maintainability, as some are dependent on each other in terms of time. For example, software may not be reliable or correct if faults occur frequently that cause the software to become unusable.%das genauso eher motivation
 
 When software errors are made, it is often not only tedious to find the programming error, but also expensive. In large systems that are used by many people every day, a small error can cost millions. A common misconception is that fault-proneness should only be considered at the end of the software development process. Especially at the beginning of the development you should build the software architecture in a way that it is less fault-prone. Changes in the architecture are always more expensive later. In addition, even before the programming itself begins, attention should be paid in the planning to various concepts and metrics, which are shown below.
+
+%hier noch fault proneness erklären als eigene sektion maybe und fault und error etc.

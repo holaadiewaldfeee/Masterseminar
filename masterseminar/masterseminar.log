@@ -1,4 +1,4 @@
-This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.11.25)  3 JAN 2021 20:48
+This is pdfTeX, Version 3.14159265-2.6-1.40.20 (TeX Live 2019/Debian) (preloaded format=pdflatex 2020.11.25)  23 JAN 2021 12:55
 entering extended mode
  restricted \write18 enabled.
  %&-line parsing enabled.
@@ -320,10 +320,10 @@ mf/fonts/map/pdftex/updmap/pdftex.map}
 <pictures/oodesign.png, id=10, 997.7275pt x 531.9875pt>
 File: pictures/oodesign.png Graphic file (type png)
 <use pictures/oodesign.png>
-Package pdftex.def Info: pictures/oodesign.png  used on input line 11.
+Package pdftex.def Info: pictures/oodesign.png  used on input line 17.
 (pdftex.def)             Requested size: 258.0pt x 137.55856pt.
 ) (./sections/researchMethod.tex
-Underfull \hbox (badness 2285) in paragraph at lines 5--6
+Underfull \hbox (badness 2285) in paragraph at lines 5--9
 []\OT1/ptm/m/n/10 Among them key-words there are "object-orientation",
  []
 
@@ -338,17 +338,17 @@ LaTeX Font Info:    Trying to load font information for U+msb on input line 5.
 (/usr/share/texlive/texmf-dist/tex/latex/amsfonts/umsb.fd
 File: umsb.fd 2013/01/14 v3.01 AMS symbols B
 )
-Underfull \hbox (badness 10000) in alignment at lines 34--34
+Underfull \hbox (badness 10000) in alignment at lines 36--36
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in alignment at lines 52--52
+Underfull \hbox (badness 10000) in alignment at lines 54--54
 [][] 
  []
 
 
-Underfull \hbox (badness 10000) in alignment at lines 65--65
+Underfull \hbox (badness 10000) in alignment at lines 67--67
 [][] 
  []
 
@@ -356,51 +356,51 @@ Underfull \hbox (badness 10000) in alignment at lines 65--65
 <pictures/faultyclasses2.png, id=23, 1116.17pt x 464.73625pt>
 File: pictures/faultyclasses2.png Graphic file (type png)
 <use pictures/faultyclasses2.png>
-Package pdftex.def Info: pictures/faultyclasses2.png  used on input line 80.
+Package pdftex.def Info: pictures/faultyclasses2.png  used on input line 83.
 (pdftex.def)             Requested size: 232.19843pt x 96.67561pt.
 <pictures/faultyclasses1.png, id=24, 1334.9875pt x 174.6525pt>
 File: pictures/faultyclasses1.png Graphic file (type png)
 <use pictures/faultyclasses1.png>
-Package pdftex.def Info: pictures/faultyclasses1.png  used on input line 90.
+Package pdftex.def Info: pictures/faultyclasses1.png  used on input line 94.
 (pdftex.def)             Requested size: 258.0pt x 33.75195pt.
  [4 <./pictures/faultyclasses2.png> <./pictures/faultyclasses1.png>])
 (./sections/analysisResults.tex
-LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 2
-9.
+LaTeX Font Info:    Trying to load font information for OT1+pcr on input line 3
+6.
 
 (/usr/share/texlive/texmf-dist/tex/latex/psnfss/ot1pcr.fd
 File: ot1pcr.fd 2001/06/04 font definitions for OT1/pcr.
 )
 Package textcomp Info: Symbol \textasciiacute not provided by
 (textcomp)             font family ptm in TS1 encoding.
-(textcomp)             Default family used instead on input line 46.
+(textcomp)             Default family used instead on input line 56.
  [5]
 <pictures/am.png, id=39, 639.38875pt x 441.65pt>
 File: pictures/am.png Graphic file (type png)
 <use pictures/am.png>
-Package pdftex.def Info: pictures/am.png  used on input line 128.
+Package pdftex.def Info: pictures/am.png  used on input line 144.
 (pdftex.def)             Requested size: 103.19843pt x 71.27869pt.
 <pictures/am2.png, id=40, 1421.31pt x 913.4125pt>
 File: pictures/am2.png Graphic file (type png)
 <use pictures/am2.png>
-Package pdftex.def Info: pictures/am2.png  used on input line 145.
+Package pdftex.def Info: pictures/am2.png  used on input line 161.
 (pdftex.def)             Requested size: 206.39685pt x 132.62958pt.
  [6 <./pictures/am.png> <./pictures/am2.png>]
 <pictures/bn1.png, id=47, 737.75626pt x 581.17125pt>
 File: pictures/bn1.png Graphic file (type png)
 <use pictures/bn1.png>
-Package pdftex.def Info: pictures/bn1.png  used on input line 206.
+Package pdftex.def Info: pictures/bn1.png  used on input line 225.
 (pdftex.def)             Requested size: 103.19843pt x 81.29247pt.
 <pictures/bn2.png, id=48, 1046.91125pt x 783.92876pt>
 File: pictures/bn2.png Graphic file (type png)
 <use pictures/bn2.png>
-Package pdftex.def Info: pictures/bn2.png  used on input line 214.
+Package pdftex.def Info: pictures/bn2.png  used on input line 233.
 (pdftex.def)             Requested size: 206.39685pt x 154.54611pt.
  [7 <./pictures/bn1.png>]
 <pictures/tableBN.png, id=55, 638.385pt x 341.275pt>
 File: pictures/tableBN.png Graphic file (type png)
 <use pictures/tableBN.png>
-Package pdftex.def Info: pictures/tableBN.png  used on input line 223.
+Package pdftex.def Info: pictures/tableBN.png  used on input line 242.
 (pdftex.def)             Requested size: 232.19843pt x 124.12952pt.
 )
 (./sections/discussion.tex [8 <./pictures/bn2.png> <./pictures/tableBN.png>])
@@ -441,7 +441,7 @@ sfonts/cm/cmsy7.pfb></usr/share/texlive/texmf-dist/fonts/type1/urw/courier/ucrr
 are/texlive/texmf-dist/fonts/type1/urw/times/utmbi8a.pfb></usr/share/texlive/te
 xmf-dist/fonts/type1/urw/times/utmr8a.pfb></usr/share/texlive/texmf-dist/fonts/
 type1/urw/times/utmri8a.pfb>
-Output written on masterseminar.pdf (9 pages, 1115215 bytes).
+Output written on masterseminar.pdf (9 pages, 1115145 bytes).
 PDF statistics:
  117 PDF objects out of 1000 (max. 8388607)
  73 compressed objects within 1 object stream
